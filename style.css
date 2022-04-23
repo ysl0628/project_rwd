@@ -95,7 +95,7 @@ img{
     margin-left: 31.5px;
     content: "";
     position: relative;
-    border-bottom: white solid 2px;
+    border-bottom: white solid 5px;
     width: 0%;
     top: 10px;
     display: block;
@@ -186,7 +186,7 @@ img{
     background-color: #3d1101;
 }
 .container .section2 img{
-    max-width: 470px;
+    width: 50%;
     height: auto;
 }
 .container .section2 .today_chef{
@@ -209,8 +209,145 @@ img{
     font-size: 15px;
     line-height: 20px;
 }
-
-
+.container .section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe9e7;
+}
+.container .section3 h3{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 24px;
+    position: relative;
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #481e0f
+}
+.container .section3 h3::before,.container .section3 h3::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #979797;
+    width: 82px;
+    top: 50%;
+}
+.container .section3 h3::before{
+    left: 100%;
+}
+.container .section3 h3::after{
+    right: 100%;
+}
+.container .section3 .reaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+.container .section3 .reaction li{
+    width: 30%;
+    display: flex;
+}
+.container .section3 .reaction img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.container .section3 .reaction .content{
+    padding-left: 5%;
+}
+.container .section3 .reaction .content h4{
+    padding-top: 18px;
+    padding-bottom: 24px;
+}
+.container .section3 .reaction .content p{
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 5%;
+}
+.container .section3 .reaction .content h5{
+    text-align: right;
+}
+.container .section4{
+    width: 100%;
+    background-color: #f6f4f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .section4 h3{
+    font-size: 24px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 30px;
+    color: #481e0f
+}
+.container .section4 .reservation{
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .section4 .reservation img{
+    width: 50%;
+}
+.container .section4 .reservation form{
+    width: 50%;
+    padding-left: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.container .section4 .reservation label{
+    padding-bottom: 2%;
+    font-size: 18px;
+    color: #481e0f;
+}
+.container .section4 .reservation input{
+    font-size: 15px;
+    height: 50%;
+    margin-bottom: 3%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding-left: 2%;
+}
+.container .section4 .reservation .radio .yes,.container .section4 .reservation .no{
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top   /* 按鈕與字對齊 */;
+}
+.container .section4 .reservation .btn{
+    display: flex;
+    justify-content: end;
+}
+.container .section4 .reservation .btn button{
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 10px;
+    color: white;
+}
+.container .section4 .reservation .btn button:hover{
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 10px;
+    color: white;
+    box-shadow: black 0px 12px 10px -10px;
+}
+.container .section4 .reservation .btn .reset{
+    background-color: #a09e91;
+}
+.container .section4 .reservation .btn .submit{
+    background-color: #f56c23;
+}
 .footer{
     width: 100%;
     background-color: #efe9e7;
