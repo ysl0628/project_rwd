@@ -59,7 +59,7 @@ img{
     margin: 0 auto;
 }
 .header{
-    background-image: url("/img/header_desktop.png");
+    background-image: url("img/header_desktop.png");
     width: 100%;
     min-height: 420px;
     background-size: cover;
@@ -72,7 +72,7 @@ img{
     background-color: rgba(0, 0, 0, 0.8);
 }
 .nav-bar .logo{
-    background-image: url("/img/logo_w@svg.svg");
+    background-image: url("img/logo_w@svg.svg");
     width: 120px;
     height: 24px;
     display: block;
@@ -361,7 +361,7 @@ img{
     align-items: center;
 }
 .footer .logo{
-    background-image: url("/img/logo_l@svg.svg");
+    background-image: url("img/logo_l@svg.svg");
     width: 240px;
     height: 48px;
     display: block;
