@@ -64,8 +64,10 @@ img{
     min-height: 420px;
     background-size: cover;
     position: relative;
+    background-size: cover;
 }
 .nav-bar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px 10px 30px;
@@ -130,6 +132,7 @@ img{
     line-height: normal;
 }
 .container .section1{
+    width: 100%;
     background-color:#efe9e7;
 }
 .container .section1 h2{  
@@ -210,6 +213,7 @@ img{
     line-height: 20px;
 }
 .container .section3{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -349,7 +353,6 @@ img{
     background-color: #f56c23;
 }
 .footer{
-    width: 100%;
     background-color: #efe9e7;
     display: flex;
     flex-direction: column;
@@ -397,4 +400,6 @@ img{
 }
 .footer .info .contact li{
     padding-bottom: 5px;
+    list-style: disc inside;
+    /* 點點在裡面 */
 }
