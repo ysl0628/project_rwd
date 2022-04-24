@@ -87,6 +87,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
 } 
 .container .login h2{
     font-size: 18px;
@@ -104,6 +105,18 @@ img{
     border: 1px solid #cccccc;
     border-radius: 5px;
     padding-left: 3%;
+}
+i.fa-envelope{
+    position: absolute;
+    top: 33px;
+    left: 10px;
+    color: #9e8880;
+}
+i.fa-lock{
+    position: absolute;
+    top: 99px;
+    left: 10px;
+    color: #9e8880;
 }
 .container .login form a{
     text-decoration: none;
