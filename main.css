@@ -75,7 +75,7 @@ img{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 30px 20px 30px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 .nav-bar .toggler{
@@ -129,7 +129,8 @@ img{
 }
 
 .nav-bar .logo{
-    background-image: url("img/logo_w@svg.svg");
+    background-image: url("img/logo_white.png");
+    background-size: cover;
     width: 120px;
     height: 24px;
     display: block;
@@ -267,7 +268,8 @@ img{
     align-items: center;
 }
 .footer .logo{
-    background-image: url("img/logo_l@svg.svg");
+    background-image: url("img/logo_blue.png");
+    background-size: cover;
     width: 240px;
     height: 48px;
     display: block;
