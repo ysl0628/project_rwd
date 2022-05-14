@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 3% 3% 3%;
+    background-color: #f3eeec;
+}
+.container .product-sort{
+    width: 35%;
+    margin-right: 2%;
+
+}
+.container .sort-title{
+    padding-top: 5px;
+    position: relative;
+}
+.container .product-sort h3{
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+i.fa-cake-candles{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 25px;
+    color: #cc562b;
+}
+.container .sort-list{
+    display: flex;
+    flex-direction: column;
+}
+.container .product-sort a{
+    text-decoration: none;
+    color: #1f0b03;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 2px solid #2c0f04;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+.container .product-sort a:hover{
+    color: white;
+    background-color: #1f0b03;
+}
+.shopping-content{
+    display: flex;
+    flex-direction: column;
+}
+.container .shopping-bar{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .shopping-bar .search{
+    width: 60%;
+    height: 35px;
+    padding-left: 5px;
+    border: 3px solid #2c0f04;
+    position: relative;
+}
+.container .shopping-bar .search-button{
+    width: 40px;
+    height: 35px;
+    border: 3px solid #2c0f04;
+    background-color: #2c0f04;
+    color: white;
+    position: absolute;
+    right: 31%;
+    cursor: pointer;
+}
+.container .shopping-bar .go-to-check{
+    width: 40px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    text-decoration: none;
+}
+.container .shopping-bar .go-to-check a{
+    text-decoration: none;
+    color: #2c0f04;
+}
+.container .product-list .wishlist{
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background: none;
+    position: relative;  
+}
+i.fa-solid.fa-heart{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 24px;
+    color: #9b9b9b83;
+}
+.container .product-list input[type="checkbox"]{
+    opacity: 0;
+}
+.container .product-list input[type="checkbox"]:checked ~ i.fa-solid{
+    color: #e42f2f;
+}
+.container .product-list{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.container .product-list li{
+    width: 32%;
+    margin-bottom: 20px;
+    margin-right: 9px;
+    position: relative;
+    border-color: transparent transparent #f3eeec transparent;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-radius: 1px;
+    box-shadow: 8px 8px 10px -10px #718093 ;
+    padding-bottom: 20px;
+}
+.product-list li h3{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+}
+.product-list li p{
+    text-align: center;
+    padding-top: 8px;
+    font-size: 16px;
+}
+.product-list li .hr{
+    padding-top: 6px;
+    border-bottom: #1f0b03 solid 2px;
+    width: 90px;
+    position: absolute;
+    top: 285px;
+    left: 75px;
+}
+.product-list li .price{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.product-list li .add-to-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.product-list li .add-to-cart input{
+    margin-right: 10px;
+    border: solid #e88f12 2px;
+    border-radius: 3px;
+    font-size: 18px;
+    width: 70%;
+    cursor: pointer;
+    color: #cc562b;
+}
+.product-list li .add-to-cart input:hover{
+    background-color: #e88f12;
+    color: white;
+}
+.product-list li .add-to-cart select{
+    width: 15%;
+    height: 30px;
+    cursor: pointer;
+}
+.product-list img{
+    width: 240px;
+    height: auto;
+}
