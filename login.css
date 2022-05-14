@@ -151,7 +151,7 @@ box-shadow: 0px 10px 10px -10px black;
 .container .login form .btn .submit{
     background-color: #e88f12;
 }
-@media (max-width:390px) {
+@media (max-width:420px) {
     .container h1{
         padding-top: 10%;
     }

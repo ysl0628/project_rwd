@@ -88,10 +88,10 @@ i.fa-cake-candles{
 }
 .container .product-sort a{
     text-decoration: none;
-    color: #1f0b03;
+    color: #072644;
     font-size: 20px;
     padding-left: 10px;
-    border-bottom: 2px solid #2c0f04;
+    border-bottom: 2px solid #1a3854;
     padding-bottom: 12px;
     padding-top: 12px;
     padding-left: 10px;
@@ -113,14 +113,14 @@ i.fa-cake-candles{
     width: 60%;
     height: 35px;
     padding-left: 5px;
-    border: 3px solid #2c0f04;
+    border: 3px solid #1a3854;
     position: relative;
 }
 .container .shopping-bar .search-button{
     width: 40px;
     height: 35px;
-    border: 3px solid #2c0f04;
-    background-color: #2c0f04;
+    border: 3px solid #1a3854;
+    background-color: #1a3854;
     color: white;
     position: absolute;
     right: 34.5%;
@@ -136,7 +136,7 @@ i.fa-cake-candles{
 }
 .container .shopping-bar .go-to-check a{
     text-decoration: none;
-    color: #2c0f04;
+    color: #1a3854;
 }
 .container .product-list .wishlist{
     position: absolute;
@@ -228,4 +228,64 @@ i.fa-solid.fa-heart{
 .product-list img{
     width: 240px;
     height: auto;
+}
+
+@media (max-width:768px){
+    .container{
+        flex-wrap: wrap;
+        padding: 0% 3% 3% 3%;
+    }
+    .container .product-sort{
+        width: 60%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 0;
+    }
+    .container .shopping-bar{
+        margin-bottom: 5%;
+    }
+}
+@media (max-width:420px) {
+    .container .product-sort{
+        width: 80%;
+        margin-bottom: 8%;
+    }
+    .container .product-sort h3{
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    i.fa-cake-candles{
+        left: 20%;
+    }
+    .shopping-content{
+        align-items: center;
+    }
+    .container .shopping-bar{
+        width: 80%;
+        margin-bottom: 5%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .container .shopping-bar .search{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .container .shopping-bar .search-button{
+        right: 12.5%;
+    }
+    .container .product-list{
+        justify-content: center;
+    }
+    .container .product-list li{
+        width: 85%;
+        margin-right: 0;
+    }
+    .product-list img{
+        width: 100%;
+    }
+    .product-list li .hr{
+        top: 75%;
+        left: 35%;
+        width: 30%;
+    }
 }
