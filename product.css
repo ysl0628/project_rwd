@@ -180,26 +180,27 @@ i.fa-solid.fa-heart{
 }
 .product-list li h3{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 8%;
     font-size: 22px;
 }
 .product-list li p{
     text-align: center;
     padding-top: 8px;
     font-size: 16px;
+    margin-bottom: 6%;
 }
 .product-list li .hr{
-    padding-top: 6px;
-    border-bottom: #1f0b03 solid 2px;
-    width: 90px;
-    position: absolute;
-    top: 285px;
-    left: 75px;
+    height: 2px;
+    width: 30%;
+    background-color: #072644;
+    margin-left: auto;
+    margin-right: auto;
 }
 .product-list li .price{
-    padding-top: 35px;
-    padding-bottom: 15px;
-    font-size: 20px;
+    padding-top: 8%;
+    margin-bottom: 5%;
+    font-size: 24px;
+    font-weight: bold;
 }
 .product-list li .add-to-cart{
     display: flex;
@@ -243,6 +244,25 @@ i.fa-solid.fa-heart{
     }
     .container .shopping-bar{
         margin-bottom: 5%;
+    }
+    .container .product-list{
+        justify-content: space-between;
+    }
+    .container .product-list li{
+        width: 49%;
+        margin-right: 0;
+    }
+    .product-list li h3{
+        font-size: 26px;
+    }
+    .product-list li p{
+        font-size: 20px;
+    }
+    .product-list img{
+        width: 100%;
+    }
+    .product-list li .price{
+        font-size: 28px;
     }
 }
 @media (max-width:420px) {
