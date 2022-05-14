@@ -140,13 +140,12 @@ i.fa-cake-candles{
 }
 .container .product-list .wishlist{
     position: absolute;
-    top: 20px;
+    top: 12px;
     left: 12px;
     display: inline-block;
     cursor: pointer;
     border: none;
-    background: none;
-    position: relative;  
+    background: none; 
 }
 i.fa-solid.fa-heart{
     position: absolute;
